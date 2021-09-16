@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+	<title>Contact Form</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<link rel="stylesheet" type="text/css" href="./styles.css" />
+</head>
+
+<body>
+
+	<div id="middle-box">
+
+		<h1 style="text-align: center; color:white; font-size: 40px">Contact Form</h1>
+				
+		<div id="contact-area">
+			
+			<form action="contact.php" method="POST">
+				<label for="Name">Name:</label>
+				<input type="text" name="Name" id="Name" placeholder="Enter your Name" />
+
+				<label for="City">City:</label>
+				<input type="text" name="City" id="City" placeholder="Enter your City" />
+	
+				<label for="Email">Email:</label>
+				<input type="text" name="Email" id="Email" placeholder="Your Email" />
+				
+				<label for="Message">Message:</label><br />
+				<textarea name="Message" placeholder="Your message..." rows="10" cols="10" id="Message"></textarea>
+
+				
+                <button class="button btn" type="submit" value="Submit" href="#popup1" >Submit</button>
+                
+			</form>
+		<!-- Popup message box -->
+            <div id="popup1" class="overlay">
+                <div class="popup">
+                    <h2>Done !</h2>
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                        Your form is sent . Thank you for contacting us !
+                    </div>
+                </div>
+            </div>
+			
+	
+	</div>
+    
+
+</body>
+
+</html>
+

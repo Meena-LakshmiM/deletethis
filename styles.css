@@ -1,0 +1,163 @@
+* {
+	margin: 5%;
+	padding: 0;
+}
+
+body {
+	font-size: 65%;
+	font-family: Helvetica, sans-serif;
+  background-image: url("imgfolder/blackimage.jfif");
+	
+}
+
+/* For the middle container details box */
+#middle-box {
+	width: 700px;
+	background: #423F3E;
+	padding: 70px 50px 20px 20px;
+	margin: 20px auto;
+	min-height: 500px;
+	height: auto !important;
+	height: 500px;
+}
+
+#contact-area {
+	width: 450px;
+	margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#contact-area input, #contact-area textarea {
+	padding: 10.5px;
+	width: 471px;
+	font-family: Helvetica, sans-serif;
+	font-size: 1.7em;
+	margin: 0px 0px 5px 3px;
+	border: 2px solid #423F3E;
+}
+
+#contact-area textarea {
+	height: 120 px;
+}
+
+#contact-area textarea:focus, #contact-area input:focus {
+	border: 2px solid #423F3E;
+}
+
+#contact-area input.submit-button {
+	width: 100px;
+	float: right;
+}
+
+/* submit button */
+
+  .button {
+  border-radius: 4px;
+  background-color:black;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  padding: 16px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+.button{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+/* adding >> to the submit button */
+.button:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+.button:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+  
+ 
+/* label - headings  */
+label {
+	float: left;
+  color: white;
+	text-align: left;
+	margin-right: 100px;
+	width: 100px;
+	padding-top: 5px;
+	font-size: 1.9em;
+}
+
+/* For popup overlaying contact form  */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+   
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* Popup box  */
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #E6DDC6;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 60;
+  }
+  .popup .close {
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: grey;
+  }
+  .popup .content {
+    max-height: 37%;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 15px ;
+    overflow: auto;
+  }
+  
+ 
